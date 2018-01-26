@@ -1,0 +1,108 @@
+button {
+    background: none;
+    border: none;
+}
+
+input,button,select,textarea {
+    outline:none;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+/*active 要在后面 否则会被hover覆盖*/
+
+button:focus {
+    background-color: #eee;
+}
+
+
+button:active {
+    background-color: #eee;
+}
+
+
+.view {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-size: 1rem;  /*浏览器默认的是16px=1rem*/
+}
+.header {
+    display: flex;
+    min-height: 50px;
+    /*justify-content: space-between;  !*两端对齐*!*/
+    border-bottom: 1px solid #ddd;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+.header .title {
+    flex: 0 0 60%;
+    align-self: center;
+    text-align: center;
+    font-size: 1.25rem; /*20px*/
+}
+.header .backBtn, .header .rightBtn, .header .deleteBtn {
+    font-size: 1.125rem; /*18px*/
+}
+.header .backBtn, .header .deleteBtn {
+    flex: 0 0 20%;
+}
+.header .rightBtn{
+    flex: 0 0 20%;
+    color: #f33;
+}
+.header .rightBtn {
+    /*min-width: 10%;*/
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25rem;
+}
+.contentList {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding-left: 5%;
+    border-bottom: 1px solid #ddd;
+}
+.contentList .contentListMain{
+    flex: 0 0 80%;
+    line-height: 28px;
+}
+.contentList .contentListTime {
+    flex: 0 0 20%;
+    color: #aaa;
+}
+
+.content .detailTitle{
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.content .detailContent{
+    padding: 0 5%;
+    line-height: 1.5rem;
+}
+
+.content .organizeName, .content .detailTime {
+    text-align: right;
+    padding-right: 10%;
+    line-height: 3rem;
+}
+
+.content .detailTime{
+    line-height: 2rem;
+}
+
+
+
+
+
