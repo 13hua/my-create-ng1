@@ -1,0 +1,93 @@
+<view class="view" style="max-width:800px; margin:auto;">
+    <header class="header">
+        <!-- <button class="backBtn iconfont icon-fanhui"></button> -->
+        <h1 class="title">添加功能</h1>
+        <!-- <button class="rightBtn" ng-click="aboutMe()">about me</button> -->
+    </header>
+    <content class="content">
+        <form action="" class="">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>账号 <span class="color-red">*</span></td>
+                        <td><input type="text" placeholder=" 账号即手机号码" style="font-size:0.75rem; color:#ddd;"></td>
+                        <th>头像</td>
+                        <td>
+                            <img src="" alt="头像" style="width:100px;height:100px; border: 1px solid #ddd;">
+                            <input type="file" name="pic" accept="image/jpg" style="border:none;font-size: 0.75rem; width: 50%;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>姓名 <span class="color-red">*</span></td>
+                        <td colspan="3"><input type="text" style="width:35%;"></td>
+                    </tr>
+                    <tr>
+                        <th>所在社区 <span class="color-red">*</span></td>
+                        <td><input type="text"></td>
+                        <th>性别 <span class="color-red">*</span></td>
+                            <td>
+                                <select name="" id="sex">
+                                    <option value="男">男</option>
+                                    <option value="女">女</option>
+                                </select>
+                            </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            出生日期 
+                            <span class="color-red">*</span>
+                            
+                        </td>
+                        <td>
+                            <input type="text" moment-picker="myDate">
+                            <!-- <div moment-picker="myDate"> {{ myDate }} </div> -->
+                        </td>
+                        <th>文化程度 <span class="color-red">*</span></td>
+                        <td>
+                            <select name="" id="educateDegree">
+                                <option value="==请选择==">==请选择==</option>
+                                <option value="小学">小学</option>
+                                <option value="初中">初中</option>
+                                <option value="高中">高中</option>
+                                <option value="普通高中">普通高中</option>
+                                <option value="职业高中">职业高中</option>
+                                <option value="中等专科">中等专科</option>
+                                <option value="中专">中专</option>
+                                <option value="专科">专科</option>
+                                <option value="大专">大专</option>
+                                <option value="大学">大学</option>
+                                <option value="本科">本科</option>
+                                <option value="硕士">硕士</option>
+                                <option value="研究生">研究生</option>
+                                <option value="待选">待选</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>身份证号码 <span class="color-red">*</span></td>
+                        <td><input type="text"></td>
+                        <th>联系电话 <span class="color-red">*</span></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align: top;">个人特长</td>
+                        <td colspan="3">
+                            <textarea name="" id="" cols="77" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align: top;">服务承诺</td>
+                        <td colspan="3">
+                            <textarea name="" id="" cols="77" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="submit-td">
+                            <button class="submit-button">提交</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </content>
+</view>

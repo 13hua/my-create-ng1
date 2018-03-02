@@ -39,7 +39,7 @@ button:active {
 
 }
 .header .title {
-    flex: 0 0 60%;
+    flex: 0 0 100%;
     align-self: center;
     text-align: center;
     font-size: 1.25rem; /*20px*/
